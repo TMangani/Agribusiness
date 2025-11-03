@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <Style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "poppins", sans-serif;
+            background-color: whitesmoke;
+            max-height: 100vh;
+            width: 100%;
+        }
+
+        .container {
+            background-color: hsla(180, 4%, 29%, 0.171);
+            margin:  100px 400px 100px 400px;
+            padding: 20px;
+            border: 1px solid hsla(120, 2%, 62%, 0.404);
+            border-radius: 0.4rem;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            text-align: center;   
+        }
+        figcaption{
+            margin-bottom: 10px;
+        }
+
+        input{
+            padding: 0.4rem;
+            display: block;
+            border-radius: 0.4rem;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            width: auto;
+        }
+      
+
+        button{
+            padding: .5rem;
+            background-color: rgba(115, 175, 24, 0.692);
+            color: whitesmoke;
+            border: 1px solid grey;
+            border-radius: .4rem;
+            
+           
+        }
+        button:hover{
+            background-color: #f0f3ebcc;
+            color:rgba(115, 175, 24, 0.692);
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 14px;
+            
+            color:rgb(115, 175, 24);
+
+        }
+        a:hover{
+            color:darkgreen;
+        }
+
+        P{
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+    </Style>
+</head>
+
+<body>
+    <Main class="container">
+        <Figure>
+            <img src="Images/Main/Logo2.png" alt="Logo2" width="150px" height="150px">
+            <figcaption>Sign in or Create your account </figcaption>
+        </Figure>
+        <form action="post" class="userform">
+        <input type="text" name="Username" id="name" placeholder="Username">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <button type="submit">Sign In</button> 
+        <a href="#">Forgot Password?</a>
+    </form>
+    <p>Don't have an account yet?<a href="#"> sign up</a></p>
+    </Main>
+
+
+
+</body>
+
+</html>

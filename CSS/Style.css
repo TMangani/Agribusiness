@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "poppins", Helvetica, sans-serif;
+}
+
+:root {
+  --bg-color: #faf8f8;
+  --second-bg-color: #76e476;
+  --text-color: #f5f5f5c7;
+  --second-text-color: #6fd46f;
+  --main-color: #48e048;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+
+}
+
+.top-deck {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background: var(--bg-color);
+  opacity: 90%;
+}
+
+.top-deck img {
+  padding: 5px;
+}
+
+.navbar a {
+  font-size: 2rem;
+  color: var(--second-text-color);
+  margin-left: 4rem;
+}
+.navbar a:hover,
+.navbar a:focus {
+  text-decoration: underline;
+}
+
+#search-icon {
+  font-size: 3rem;
+  color: var(--second-text-color);
+  margin-left: 7rem;
+}
+
+#login-icon {
+  font-size: 3.5rem;
+  color: var(--second-text-color);
+  margin-left: 1rem;
+}
+
+#cart-icon {
+  font-size: 3.5rem;
+  color: var(--second-text-color);
+  margin-left: 4rem;
+}
+
+.navbar i:hover {
+  text-shadow: 0 0 2px var(--main-color);
+  cursor: pointer;
+}
+
+.motto {
+  background-image: url('Images/main/Wheat-field.jpg');
+  background-repeat: repeat;
+  background-size: 50px 50px;
+  background-position: top left;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.motto-content {
+  margin: 250px 0px 0px 0px;
+  padding: 5rem;
+  height: 100vh;
+}
+
+.motto-content h1 {
+  font-size: 5rem;
+  color: var(--text-color);
+}
+
+.motto-content p {
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
+.cash-crop-header h1 {
+  font-size: 3.5rem;
+  margin: -200px 0px 220px 0px;
+  text-align: center;
+  color: var(--second-text-color);
+  position: relative;
+}
+
+.cash-crop-header h1:before {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  margin: -00px 0px 220px 0px;
+  background: var(--second-text-color);
+  left: 8px;
+  top: 50%;
+  position: absolute;
+}
+.cash-crop-header h1:after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  margin: -00px 0px 220px 0px;
+  background: var(--second-text-color);
+  right: 8px;
+  top: 50%;
+  position: absolute;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: -180px 10px 10px 160px;
+}
+
+.product-tile {
+  width: 200px;
+  height: 300px;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  flex-direction: column;
+  background: var(--main-color);
+  border-radius: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-tile:hover {
+  transform: scale(1.05);
+}
+
+.product-tile img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 0.2rem;
+}
+
+.cash-crop {
+  font-size: 1.5rem;
+}
+
+.product-tile button {
+  width: 50%;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  color: var(--second-text-color);
+  text-decoration: solid;
+  border-color: black;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.vegetable-header h1 {
+  font-size: 3.5rem;
+  margin: -20px 0px 220px 0px;
+  text-align: center;
+  color: var(--second-text-color);
+  position: relative;
+}
+
+.vegetable-header h1:before {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  margin: -00px 0px 220px 0px;
+  background: var(--second-text-color);
+  left: 8px;
+  top: 50%;
+  position: absolute;
+}
+.vegetable-header h1:after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 2px;
+  margin: -00px 0px 220px 0px;
+  background: var(--second-text-color);
+  right: 8px;
+  top: 50%;
+  position: absolute;
+}
+
+.vegetable-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: -180px 10px 10px 160px;
+}
+.vegetable-tile:hover {
+  transform: scale(1.05);
+}
+
+.vegetable-tile {
+  width: 200px;
+  height: 300px;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  flex-direction: column;
+  background: var(--main-color);
+  border-radius: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.vegetable-tile:hover {
+  transform: scale(1.05);
+}
+
+.vegetable-tile img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 0.2rem;
+}
+
+.veg-crop {
+  font-size: 1.5rem;
+}
+
+.vegetable-tile button {
+  width: 50%;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  color: var(--second-text-color);
+  text-decoration: solid;
+  border-color: black;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 5px;
+}
