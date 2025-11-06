@@ -23,16 +23,18 @@ html {
   overflow-x: hidden;
 }
 
-body {
+body{
+   background: rgb(0, 0, 0, 0.8) url("/Agribusiness/Images/Main/Wheat-field.jpg") no-repeat top;
+   
 
-}
+} 
 
 .top-deck {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 6%;
+  padding: 0.5rem 12%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,11 +44,12 @@ body {
 }
 
 .top-deck img {
-  padding: 5px;
+  padding: 25px;
+  margin-top: -18px;
 }
 
 .navbar a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--second-text-color);
   margin-left: 4rem;
 }
@@ -56,19 +59,19 @@ body {
 }
 
 #search-icon {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--second-text-color);
   margin-left: 7rem;
 }
 
 #login-icon {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: var(--second-text-color);
   margin-left: 1rem;
 }
 
 #cart-icon {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: var(--second-text-color);
   margin-left: 4rem;
 }
@@ -78,18 +81,18 @@ body {
   cursor: pointer;
 }
 
-.motto {
-  background-image: url('Images/main/Wheat-field.jpg');
-  background-repeat: repeat;
-  background-size: 50px 50px;
-  background-position: top left;
-  background-attachment: fixed;
-  min-height: 100vh;
-  width: 100%;
-}
+/*.motto {
+  background-image: url("/Agribusiness/Images/Main/Wheat-field.jpg");
+  background-repeat: no repeat;
+  background-position: contain;
+  background-size: cover;
+  max-height: fit-content;
+  margin-top: -150px;
+
+}*/
 
 .motto-content {
-  margin: 250px 0px 0px 0px;
+  margin: 200px 0px 0px 100px;
   padding: 5rem;
   height: 100vh;
 }
